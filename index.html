@@ -1,13 +1,26 @@
 <html>
     <head>
-     
     </head>
+
     <body>
-        oiiiiii
+        <p id="teste">Conteudo</p>
+
+        <script>
+          var v = document.getElementById('teste');
+          v.innerHTML = '<ul>';
+          var nomes = [
+            'fabricio',
+            'manu',
+            'melissa',
+            'larissa',
+            'eduarda',
+            'jcesar'
+          ];
+          for (var i = 0; i < nomes.length; i++) {
+            v.innerHTML += '<li>' + nomes[i];
+            v.innerHTML += '</li>';
+          }
+          v.innerHTML += '</ul>';
+        </script>
     </body>
-    <script>
-        for (var i = 0; i < 10; i++) {
-            alert('sou linda');
-        }
-    </script>
 </html>
